@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MobileMarket</string>
+    <string name="tab_text_1">News</string>
+    <string name="tab_text_2">Home</string>
+    <string name="tab_text_3">Compare</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+    <string-array name="sort">
+        <item>เปิดตัวล่าสุด</item>
+        <item>ชื่อรุ่น A-Z</item>
+        <item>ชื่อรุ่น Z-A</item>
+    </string-array>
+
+</resources>

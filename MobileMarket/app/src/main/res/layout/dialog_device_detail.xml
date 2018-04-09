@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgView1"
+                android:layout_width="0dp"
+                android:layout_height="230dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="18dp"
+                android:layout_weight="1"
+                android:text="Name"
+                android:textAlignment="textStart"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/ImbtnVisit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgView1" />
+
+            <ImageButton
+                android:id="@+id/ImbtnVisit"
+                android:layout_width="45dp"
+                android:layout_height="47dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgView1"
+                app:srcCompat="@mipmap/ic_visit" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/transparent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical"
+                    android:paddingRight="8dp">
+
+                    <TextView
+                        android:id="@+id/txthead1x"
+                        android:layout_width="match_parent"
+                        android:layout_height="23dp"
+                        android:text="ข้อมูลเครื่อง"
+                        android:textAlignment="textEnd"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtAnnouncedx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="เปิดตัว"
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtDimensionsx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ขนาดตัวเครื่อง"
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtScreenx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ขนาดหน้าจอ"
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtWeightx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="น้ำหนัก"
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtOsx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ระบบปฎิบัติการ"
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtResolutionx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ความละเอียดหน้าจอ"
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtCPUx"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="CPU"
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtGPUx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GPU"
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtRAMx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="RAM"
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtROMx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="หน่วยความจำ (ภายใน)"
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtEXROMx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="หน่วยความจำ (ภายนอก)"
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <TextView
+                        android:id="@+id/txtHead2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ข้อมูลเครือยข่าย"
+                        android:textAlignment="textEnd"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtTechnologyx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="เทคโนโลยี/การส่งข้อมูล"
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtBluetoothx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bluetooth"
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtWIFIx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="WI-FI"
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtNFCx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="NFC"
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtGPSx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GPS"
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <TextView
+                        android:id="@+id/txtHead3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="กล้อง/วีดีโอ"
+                        android:textAlignment="textEnd"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtFcamx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="กล้องหน้า"
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtBcamx"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:text="กล้องหลัง"
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtVideox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ถ่ายวีดีโอ"
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <TextView
+                        android:id="@+id/txtHead4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="คุณสมบัติอื่น"
+                        android:textAlignment="textEnd"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtBatteryx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="แบตเตอรี่"
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtColorx"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:text="สีเครื่อง"
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtDuosimx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="สองซิม"
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtWaterproofx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="กันน้ำ"
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="23dp"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtAnnounced"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtDimensions"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtScreen"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtWeight"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtOs"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtResolution"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtCPU"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="TextView"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtGPU"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtRAM"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtROM"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtEXROM"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="12sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <TextView
+                        android:id="@+id/txtHead2z"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtTechnology"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtBluetooth"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtWIFI"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtNFC"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtGPS"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="12sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <TextView
+                        android:id="@+id/txtHead3x"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtFcam"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtBcam"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:text="TextView"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtVideo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="12sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <TextView
+                        android:id="@+id/txtHead4x"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtBattery"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:text="TextView"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtDuosim"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtWaterproof"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</android.widget.RelativeLayout>
